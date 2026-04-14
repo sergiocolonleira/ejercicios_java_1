@@ -2,7 +2,7 @@ public class Ejercicios_sesion2 {
 
 //DECLARO LAS VARIABLES DE LOS EJERCICIOS SIGUIENTES//
 
-    //Ejercicio 1: Constantes y buenas prácticas..
+    //Ejercicio 1: Constantes y buenas prácticas.
     static final double IVA = 0.21;
     static int PRECIO_BASE_PRODUCTO = 100;
 
