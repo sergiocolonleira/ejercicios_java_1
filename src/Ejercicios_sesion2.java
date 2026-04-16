@@ -4,19 +4,19 @@ public class Ejercicios_sesion2 {
 
     //Ejercicio 1: Constantes y buenas prácticas.
     static final double IVA = 0.21;
-    static int PRECIO_BASE_PRODUCTO = 100;
+    static int precioBaseProducto = 100;
 
-    static double PRECIO_FINAL = (PRECIO_BASE_PRODUCTO * IVA) + (PRECIO_BASE_PRODUCTO);
+    static double precioFinal = (precioBaseProducto * IVA) + (precioBaseProducto);
 
     //Ejercicio 2: Declarar una variable de cada tipo
-    boolean prueba = true;
-    byte prueba2 = 3;
-    short prueba3 = 20000;
-    int prueba4 = 5;
-    long prueba5 = 10000000l;
-    float prueba6 = 2.34f;
-    double prueba7 = 7.45;
-    char prueba8 = 'A';
+    static boolean prueba = true;
+    static int prueba2 = 3;
+    static short prueba3 = 20000;
+    static int prueba4 = 5;
+    static long prueba5 = 10000000L;
+    static float prueba6 = 2.34f;
+    static double prueba7 = 7.45;
+    static char prueba8 = 'A';
 
 //Ejercicio 4: Diferencias entre enteros y decimales
 
@@ -56,28 +56,20 @@ static String s2 = s1;
     static void main() {
 //Ejercicio 1: Constantes y buenas prácticas
 
-        System.out.println(PRECIO_FINAL);
+        System.out.println(precioFinal);
 
 
 //Ejercicios 2: Declara una variable de cada tipo y que se muestren en terminal
-
-        boolean prueba = true;
+       //Hago un SOUT de cada una de las variables declaradas arriba y las llamo para que salgan por pantalla
         System.out.println(prueba);
-        byte prueba2 = 3;
         System.out.println(prueba2);
-        short prueba3 = 20000;
         System.out.println(prueba3);
-        int prueba4 = 5;
         System.out.println(prueba4);
-        long prueba5 = 10000000l;
         System.out.println(prueba5);
-        float prueba6 = 2.34f;
+        System.out.println(prueba5);
         System.out.println(prueba6);
-        double prueba7 = 7.45;
         System.out.println(prueba7);
-        char prueba8 = 'A';
         System.out.println(prueba8);
-
 
 //Ejercicios 3: Indica el tipo de literal y crea una variable adecuada para cada uno
         int valorInt = 10; //Int, primitivo
@@ -109,7 +101,7 @@ static String s2 = s1;
 //Ejercicio 6: Promoción de tipos.
 
 /* byte resultadoByte = A + B;
-        System.out.println(resultadoByte); Así va a dar error porque java convierte automáticamente e un int
+        System.out.println(resultadoByte); Así va a dar error porque Java, en operaciones aritméticas, byte, short y char se promocionan automáticamente a int.
                 Propuesta de solución: Cambiar int por byte ambos parámetros
                 Propuesta de solución 2: Pedir en resultado, que me de un int en vez de un byte
                 Propuesta de solución 3: Crear la variable resultadoFinal, en la que resultadoFinal es un byte "forzado" y que el sout ya me lo de como un byte */
@@ -136,7 +128,7 @@ Debe comprobar primero que el divisor no sea cero antes de hacer n % d.*/
         if (divisor!= 0 && dividendo % divisor == 0) { //Si el divisor es distinto de 0 + si y solo si el dividendo y el divisor se pueden dividir y el resultado es exacto
             System.out.println("Se puede dividir");
         } else if (divisor == 0) {
-            System.out.println("No se puede dividir entre0");
+            System.out.println("No se puede dividir entre 0");
         } else {
             System.out.println(dividendo + " NO es divisible entre " + divisor);
         }
@@ -150,12 +142,10 @@ Debe comprobar primero que el divisor no sea cero antes de hacer n % d.*/
        funcionaría. También funcionaría aplicando un else, como en el ejemplo inferior, ya que "y" estaba "ocupando" el lugar
        de else en la función. Se añade else, se "mueve" "y" a la línea inferior y se solucionaría el problema.
         */
-        int x = 10;
-        if (x == 10) {
-        } else {
+        int x = 10; //Declaor el int
+        if (x == 10) { //Abro el if, si x es = y solo = a 10, y se convierte en 20. Sout y que imprima por pantalla.
         int y = 20;
         System.out.println(y);
-
     }
 // Ejercicio 10: Referencia vs primitivo
         b = 20;
